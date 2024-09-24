@@ -52,9 +52,9 @@ jobs:
           SONAR_URL: https://sonarcloud.io
 
   BUILD_AND_PUBLISH:
-  needs: Testing
-  runs-on: ubuntu-latest
-  steps:
+    needs: Testing
+    runs-on: ubuntu-latest
+    steps:
       - name: Code checkout
         uses: actions/checkout@v4
 
